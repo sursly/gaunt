@@ -1169,6 +1169,7 @@ body.home {
 	letter-spacing: -.5em;
     text-rendering: optimizeLegibility;
     text-decoration: none;
+    max-width: 100%;
 }
 
 #latest a:hover h1 {
