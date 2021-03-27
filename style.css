@@ -764,6 +764,7 @@ object {
 
 #content h1 {
 	margin-bottom: 50px;
+	font-weight: 150;
 }
 
 #content img {
@@ -918,6 +919,22 @@ h5 {
 	letter-spacing: 2px;
     font-weight: bold;
 }
+
+h5.page-title, h5.archive-title {
+	text-align: center;
+}
+
+h1.entry-title a, .archive a h1 {
+	color: #222;
+}
+h1.entry-title a:hover,  .archive a:hover h1 {
+	text-decoration: underline;
+}
+
+.page-title span, .archive-title span {
+	background: #ffee00;
+}
+
 
 h6 {
 	font-size: 16px;
@@ -1387,9 +1404,13 @@ footer {
 }
 
 #secondary {
-		padding: 50px 50px 25px;
-	background: #f5f5f5;
-	text-align: center;
+	padding: 50px 50px 25px;
+	background: #fff;
+	text-align: left;
+	max-width: 90vw;
+	margin: 5vw auto 0;
+	border-radius: 10px;
+	box-shadow: 0px 7px 25px rgba(0,0,0,0.1);
 }
 
 footer a {
@@ -1480,11 +1501,11 @@ margin-bottom: 10px;
 }
 
 .widget {
-	margin: 0 auto 25px;
 	font-size: 16px;
-	width: 40%;
+	width: 48%;
 	display: inline-block;
 	vertical-align: top;
+	margin: 0 1% 25px;
 }
 
 .widget ul {
@@ -1498,15 +1519,18 @@ font-size: 16px;
 
 }
 
-.widget.widget_search, #content .widget.widget_search h1, .search-form, body.error404 h1, body.error404 p  {
+body.error404 h1, body.error404 p  {
 text-align: center;
 }
-
+ #content .widget.widget_search h1, .widget.widget_search,.search-form {
+	 text-align: left;
+ }
 
 
 .widget, #content .widget h1 {
 	font-weight: 450;
 	color: #999;
+	text-align: left;
 }
 
 .widget_recent_entries a, .widget_archive a, .widget_pages a, .widget_nav_menu a {
@@ -1624,8 +1648,7 @@ h5 a:hover {
 
 form {
 	margin: 0 auto 30px;
-	text-align: center;
-	max-width: 500px;
+	text-align: left;
 }
 
 video {
@@ -2101,7 +2124,20 @@ ul#archives li .post-categories {
 }
 
 body {
-	padding-top: 55px;
+	padding-top: 85px;
+}
+
+#featured {
+	top: -29px;
+	margin-bottom: 0;
+}
+
+.nav-links div {
+	line-height: 1.2;
+}
+
+#featured h1#entry-title {
+	margin-bottom: 0;
 }
 
 #navigation {

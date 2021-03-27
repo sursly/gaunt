@@ -2,6 +2,9 @@
 ## Free Minimal Wordpress Theme
 ### Demo at [gaunt.madebytyler.com](https://gaunt.madebytyler.com)
 
+![Gaunt in use](gaunt.webp "screenshot of gaunt")
+
+
 Just upload this to your themes folder, activate, and party. To use a custom logo you need to have Jetpack installed, then go to the Appearance > Customize and add it there. Here are some other tips and things to know
 
 ***
