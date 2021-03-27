@@ -1800,7 +1800,6 @@ font-size: 15px;
 
 
 #content h1 {
-		font-size: 1.8em;
 }
 
 form {
@@ -1858,6 +1857,8 @@ form {
 
 .widget {
 	padding: 0 0 30px;
+	width: 100%;
+	display: block;
 }
 
 #content blockquote p {
