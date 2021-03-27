@@ -13,9 +13,9 @@
   <footer id="footer" class="site-footer" role="contentinfo">
     <p class="site-description"><?php bloginfo( 'description' ); ?></p><p class="copyright">Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?></p>
 
-      <small>Gaunt Theme, <a href="https://www.madebytyler.com">Made by Tyler</a></small>
+      <small>Gaunt Theme <a href="https://www.madebytyler.com">Made by Tyler</a></small>
 
-  </footer><!-- #colophon -->
+  </footer>
 </div><!-- #page -->
 
 
@@ -34,8 +34,6 @@ $(function() {
         $("h1#entry-title:in-viewport").each(function() {
             $("h2#small-title").removeClass("on");});
           });
-
-
 
         });
 
@@ -69,18 +67,6 @@ $( "#mobilebutton" ).click(function() {
 });
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() == $(document).height()-$(window).height()){
-        $("#navigation").addClass("thebottom");
-        $("#navigation").removeClass("downscrolled");
-
-    }  else {
-         $("#navigation").removeClass("thebottom");
-
-    }
-});
-
-
-$(window).scroll(function(){
 
 if($(window).scrollTop() < 1) {
     $("#navigation").addClass("thetop");
@@ -88,16 +74,18 @@ if($(window).scrollTop() < 1) {
   }
 });
 
+$(window).scroll(function(){
+	    if ($(window).scrollTop() == $(document).height()-$(window).height()){
+	        $("#navigation").addClass("thebottom");
+	        $("#navigation").removeClass("downscrolled");
 
+	    }  else {
+	         $("#navigation").removeClass("thebottom");
 
-
-
-
-
+	    }
+	});
 
 </script>
-
-
 
 </body>
 </html>

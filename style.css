@@ -276,7 +276,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #222;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -291,7 +291,6 @@ h4,
 h5,
 h6 {
 	clear: both;
-	color: #222;
 	font-family: 'Work Sans', sans-serif;
 }
 
@@ -368,7 +367,7 @@ body {
 
 
 hr {
-	background-color: #ccc;
+	background-color: #999;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -772,7 +771,7 @@ object {
 	margin: 0 auto 40px;
 	display: block;
 	line-height: 1;
-	max-height: 100vh;
+	max-height: 95vh;
 	height: auto;
 	width: auto;
 }
@@ -890,7 +889,6 @@ h1#entry-title {
 	position: relative;
 	z-index: 10;
 	max-width: 900px;
-	color: #222;
     padding: 0 40px;
 		font-weight: 150;
 }
@@ -1266,9 +1264,9 @@ bottom: 22%;
 	width: 30px;
 	height: 10px;
 	font-size: 30px;
-	line-height: 7px;
+	line-height: 6px;
 	position: absolute;
-	top: 6px;
+	top: 5px;
 	right: 20px;
 	color: #222;
 	z-index: 5;
@@ -1455,6 +1453,11 @@ list-style-type: none;
 
 h1 a, #archives a, .category #main a{
 	text-decoration: none;
+}
+
+#archives a h1{
+	color: #222; /*fix for dark mode*/
+
 }
 
 .category #content h1, .search #content h1 {
@@ -1774,6 +1777,7 @@ bottom: 0;
 
 .wp-block-columns {
 	max-width: 100%;
+	display: block;
 }
 
 #content p {

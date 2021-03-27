@@ -87,7 +87,7 @@ function gaunt_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'gaunt' ),
 		'id'            => 'sidebar-1',
-		'description'   => '',
+		'description'   => 'dynamic sidebar',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
@@ -133,7 +133,7 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 function filter_ptags_on_images($content){
    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
@@ -152,9 +152,8 @@ return '<a class="more-link" href="' . get_permalink() . '">Continue</a>';
 
 // Create a custom image size for Site Logo.
 add_image_size( 'gaunt-logo', 400, 400 );
- 
+
 // Declare theme support for Site Logo.
 add_theme_support( 'site-logo', array(
     'size' => 'gaunt-logo',
 ) );
-
