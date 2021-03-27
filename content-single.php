@@ -5,14 +5,36 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="entry-meta"><?php the_time(get_option('date_format')); ?></div>
-		<?php the_title( '<h1 id="entry-title">', '</h1>' ); ?>
+	<header>
 
-		<div class="entry-meta date">
-			<?php echo the_category(); ?>
 
-		</div>	
-		<?php the_post_thumbnail( 'large' ); ?> 
+		<?php if ( has_post_thumbnail() ) {
+			echo '<div id="featured"><div class="bgimg" style="background-image: url(';
+			echo get_the_post_thumbnail_url($post_id, 'large');
+			echo ')";> </div>';
+			echo '<div class="entry-meta">';
+			the_time(get_option('date_format'));
+			echo '</div>';
+			the_title( '<h1 id="entry-title">', '</h1>' );
+			echo '<div class="entry-meta date">';
+			echo the_category();
+			echo '</div>';
+			echo '</div>';
+
+} else {
+
+	echo '<div class="entry-meta">';
+	the_time(get_option('date_format'));
+	echo '</div>';
+ the_title( '<h1 id="entry-title">', '</h1>' );
+ echo '<div class="entry-meta date">';
+ echo the_category();
+ echo '</div>';
+	echo '</div>';
+
+} ?>
+
+	</header>
 
 	<div class="entry-content">
 		<?php the_content(); ?>

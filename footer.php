@@ -13,7 +13,7 @@
   <footer id="footer" class="site-footer" role="contentinfo">
     <p class="site-description"><?php bloginfo( 'description' ); ?></p><p class="copyright">Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?></p>
 
-      <small>Theme: <a href="http://www.tylerfinck.com/gaunt">Gaunt</a></small>
+      <small>Gaunt Theme, <a href="https://www.madebytyler.com">Made by Tyler</a></small>
 
   </footer><!-- #colophon -->
 </div><!-- #page -->
@@ -24,7 +24,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.viewport.mini.js"></script>
 <script type="text/javascript">
-    
+
 $(function() {
     var previous = "";
     $(window).bind("scroll", function(event) {
@@ -65,7 +65,7 @@ $( "#navigation" ).hover(function() {
 
 $( "#mobilebutton" ).click(function() {
   $( this ).toggleClass("clicked");
-  $( "#navigation" ).toggleClass("active"); 
+  $( "#navigation" ).toggleClass("active");
 });
 
 $(window).scroll(function(){
@@ -86,7 +86,7 @@ if($(window).scrollTop() < 1) {
     $("#navigation").addClass("thetop");
     $("#navigation").removeClass("downscrolled");
   }
-});  
+});
 
 
 
