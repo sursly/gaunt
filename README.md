@@ -1,6 +1,6 @@
 # gaunt
 ## Free Minimal Wordpress Theme
-### Demo at [gaunt.madebytyler.com](https://gaunt.madebytyler.com)
+### Demo at [demos.tyfromtheinternet.com/gaunt/](https://demos.tyfromtheinternet.com/gaunt/)
 
 ![Gaunt in use](gaunt.webp "screenshot of gaunt")
 

@@ -13,7 +13,7 @@
   <footer id="footer" class="site-footer" role="contentinfo">
     <p class="site-description"><?php bloginfo( 'description' ); ?></p><p class="copyright">Copyright &copy; <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?></p>
 
-      <small>Gaunt Theme <a href="https://www.madebytyler.com">Made by Tyler</a></small>
+      <small>Theme by: <a href="https://www.tyfromtheinternet.com">Ty From The Internet</a></small>
 
   </footer>
 </div><!-- #page -->

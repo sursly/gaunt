@@ -376,8 +376,7 @@ hr {
 ul,
 ol {
 	margin: 0 0 1.5em 3em;
-	font-family: 'Work Sans', sans-serif;
-
+font-weight: 300;
 }
 
 ul {
@@ -749,17 +748,13 @@ object {
 	vertical-align: top;
 }
 
-.textwidget, .widget_calendar {
-	max-width: 500px;
-	margin: 0 auto;
-}
 
 #content .textwidget p {
 	text-align: left;
-    font-style: italic;
-    font-size: 18px;
-   	letter-spacing: -.33px;
-
+margin: 0 auto 10px;
+padding: 0;
+font-size: 13px;
+font-weight: 300;
 }
 
 #content h1 {
@@ -875,9 +870,22 @@ h1 {
     text-rendering: geometricPrecision;
 }
 
-#secondary h1 {
+#secondary h1 ,#secondary h2, #secondary h3, #secondary label {
 	font-size: 12px;
+	font-weight: 350;
 	text-transform: uppercase;
+}
+.wp-block-search .wp-block-search__input {
+flex-grow: 0;
+}
+
+#secondary ol.wp-block-latest-comments {
+	margin: 0;
+	padding: 0;
+}
+
+#secondary footer {
+	padding: 0;
 }
 
 .widget ul {
@@ -978,7 +986,7 @@ header#navigation {
 
 #site-navigation {
 	position: absolute;
-	right: 30px;
+	right: 5vw;
 	top: 50%;
 	margin-top: -.75em;
 	line-height: 1.5em;
@@ -1190,9 +1198,9 @@ body.home {
 	font-size: 40px;
 	text-align: center;
 	color: #fff;
-	font-weight: 150;
+	font-weight: 250;
 	display: block;
-	background: rgba(20,216,251,0.7);
+	background: rgba(0,0,0,0.5);
 	opacity: 0;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
@@ -1307,7 +1315,7 @@ bottom: 22%;
 }
 
 .nav-links a, .nav_links {
-    font-weight: 200;
+    font-weight: 300;
     color: #404040;
 }
 
@@ -1336,7 +1344,7 @@ bottom: 22%;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: bold;
-	color: #bbb;
+	color: #444;
 	font-size: 9px;
 }
 
@@ -1349,7 +1357,7 @@ bottom: 22%;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: bold;
-	color: #bbb;
+	color: #444;
 	font-size: 9px;
 
 }
@@ -1366,7 +1374,7 @@ padding: 0;
 	top: 50%;
 	width: 11vw;
 	margin-top: -20px;
-	left: 30px;
+	left: 5vw;
 }
 
 .home #site-navigation {
@@ -1416,7 +1424,7 @@ footer {
 footer a {
 	color: #999;
 	letter-spacing: .5px;
-font-weight: 150;
+font-weight: 300;
 }
 
 .page h1#entry-title {
@@ -1430,11 +1438,11 @@ font-weight: 150;
 p.copyright {
 	font-size: 10px;
 	display: block;
-	border: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 	width: 230px;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 	text-transform: uppercase;
-	padding: 10px 5px;
+	padding: 15px 5px;
 	letter-spacing: 2px;
 	border-radius: 4px;
 }
@@ -1443,10 +1451,15 @@ small {
 	clear: both;
 }
 
+#footer small {
+	font-size: 10px;
+}
+
 p.site-description {
 	font-style: italic;
 	letter-spacing: -.2px;
 	font-size: 14px;
+	font-weight: 300;
 
 }
 
@@ -1528,8 +1541,7 @@ text-align: center;
 
 
 .widget, #content .widget h1 {
-	font-weight: 450;
-	color: #999;
+	font-weight: 250;
 	text-align: left;
 }
 
@@ -1542,10 +1554,13 @@ font-weight: 250;	color: #333;
 }
 
 .widget a {
-font-weight: 250;
+font-weight: 350;
 	color: #333;
 	text-decoration: none;
-
+	border-bottom: 1px solid #aaa;
+}
+.widget a:hover {
+	border-bottom: 1px solid #14d8fb;
 }
 
 .widget_categories li a {
@@ -1557,9 +1572,7 @@ font-weight: 250;
 	color: #fff;
 }
 
-.widget a:hover {
-	color: #14d8fb;
-}
+
 
 ul.children, .search #secondary {
 	display: none;
@@ -1596,7 +1609,7 @@ ul.children, .search #secondary {
 	text-decoration: none;
 	color: #fff;
 	font-size: 20px;
-  font-weight: 150;
+  font-weight: 350;
     width: 300px;
     line-height: 1;
     padding: 0 35px;
@@ -1621,7 +1634,7 @@ ul.children, .search #secondary {
 }
 
 #content #children li a:hover h2 {
-		background: rgba(20,216,251,0.7);
+		background: rgba(0,0,0,0.5);
 
 }
 
@@ -1742,9 +1755,14 @@ bottom: 0;
 	line-height: 1.6;
 }
 
+.not-found .search-form {
+	text-align: center;
+}
+
 /* - - - - - - - -responsive layout starts here  - - - - - - - - */
 
 @media only screen and (max-width: 1023px) {
+
 
 
 
@@ -1794,6 +1812,17 @@ bottom: 0;
 	opacity: 1;
 }
 
+#content ul, #content ol {
+	font-size: 15px;
+}
+
+#secondary {
+	padding: 30px;
+}
+
+.widget input {
+	width: 96%;
+}
 .entry-content figure.wp-block-image.size-large {
 	max-width: 100vw;
 }
@@ -1880,6 +1909,16 @@ form {
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content p, #content ol, #content ul, #content small, #content iframe, .widget {
 	margin: 0 auto 35px;
 	padding: 0 40px;
+}
+
+#content #secondary p {
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+.widget form, .widget, #content .widget h1, #content .widget h2, #content .widget h3, #content .widget h4, #content .widget h5, #content .widget h6, #content .widget ol, #content .widget ul  {
+	padding: 0;
+	margin-bottom: 10px;
 }
 
 .widget {
@@ -2081,7 +2120,7 @@ margin: 0;
 
 #homefeature #latest a h1 {
 letter-spacing: .5px;
-background: none;
+background: rgba(0,0,0,0.5);
 }
 
 
@@ -2138,6 +2177,7 @@ body {
 
 #featured h1#entry-title {
 	margin-bottom: 0;
+	padding: 1em;
 }
 
 #navigation {
